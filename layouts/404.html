@@ -51,7 +51,7 @@
       </main>
     </div>
     {{ partial "footer.html" . }} {{ template
-    "_internal/google_analytics_async.html" . }} {{ if and
+    "_internal/google_analytics.html" . }} {{ if and
     .Site.Params.EnableLocalSearch .Site.Params.Rss }}
     <script type="text/javascript">
       const host = window.location.host;
