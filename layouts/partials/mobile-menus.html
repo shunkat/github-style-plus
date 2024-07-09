@@ -12,8 +12,8 @@
   style="z-index:3;">
   <nav class="UnderlineNav-body">
     <a class="UnderlineNav-item {{ if .IsHome }} selected {{ end }}" href="{{ .Site.BaseURL }}">
-      <svg class="octicon octicon-book UnderlineNav-octicon hide-sm" height="16" viewBox="0 0 16 16" version="1.1"
-        width="16">
+      <svg class="octicon octicon-book UnderlineNav-octicon hide-sm" height="16" viewBox="0 0 16 16"
+        version="1.1" width="16">
         <path fill-rule="evenodd"
           d="M0 1.75A.75.75 0 01.75 1h4.253c1.227 0 2.317.59 3 1.501A3.744 3.744 0 0111.006 1h4.245a.75.75 0 01.75.75v10.5a.75.75 0 01-.75.75h-4.507a2.25 2.25 0 00-1.591.659l-.622.621a.75.75 0 01-1.06 0l-.622-.621A2.25 2.25 0 005.258 13H.75a.75.75 0 01-.75-.75V1.75zm8.755 3a2.25 2.25 0 012.25-2.25H14.5v9h-3.757c-.71 0-1.4.201-1.992.572l.004-7.322zm-1.504 7.324l.004-5.073-.002-2.253A2.25 2.25 0 005.003 2.5H1.5v9h3.757a3.75 3.75 0 011.994.574z">
         </path>
@@ -21,51 +21,113 @@
       Overview
     </a>
     <a class="UnderlineNav-item {{ if in .Keywords "root" }} selected {{ end }}{{ if eq .Type " tags" }} selected {{ end }}" href="{{ .Site.BaseURL }}/post/">
-      <svg class="octicon octicon-repo UnderlineNav-octicon hide-sm" height="16" viewBox="0 0 16 16" version="1.1"
-        width="16">
+      <svg class="octicon octicon-repo UnderlineNav-octicon hide-sm" height="16" viewBox="0 0 16 16"
+        version="1.1" width="16">
         <path fill-rule="evenodd"
           d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
         </path>
       </svg>
       Posts
-      <span class="Counter ">{{ $section_count}}</span>
+      <span class="Counter">{{ $section_count}}</span>
     </a>
     <a class="UnderlineNav-item {{ if in .Keywords "entrance" }} selected {{ end }}" href="{{ .Site.BaseURL }}/post/entrance">
-      <svg class="octicon octicon-repo UnderlineNav-octicon hide-sm" height="16" viewBox="0 0 16 16"
-        version="1.1" width="16">
-        <path fill-rule="evenodd"
-          d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
-        </path>
-      </svg>
+      <svg class="octicon octicon-repo UnderlineNav-octicon hide-sm" height="16" width="16" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" style="width: 16px; height: 16px; opacity: 1;" xml:space="preserve">
+        <style type="text/css">
+        
+          .st0{fill:#4B4B4B;}
+        
+        </style>
+        <g>
+          <path class="st0" d="M256,120.07L145.016,12.742C131.953,0.102,112.594-3.492,95.844,3.586
+            c-16.734,7.109-27.609,23.531-27.609,41.719v274c0,18.406,7.469,36.031,20.703,48.844L224.5,499.258
+            c17.563,16.984,45.438,16.984,62.984,0l135.578-131.109c13.234-12.813,20.703-30.438,20.703-48.844v-274
+            c0-18.188-10.875-34.609-27.609-41.719c-16.75-7.078-36.109-3.484-49.172,9.156L256,120.07z M379.844,311.414
+            c0,6.141-2.484,12.016-6.906,16.281L256,440.805V209.008l22.219-21.5l82.438-79.719c3.25-3.156,8.109-4.063,12.281-2.281
+            c4.188,1.766,6.906,5.875,6.906,10.422V311.414z"></path>
+        </g>
+      </svg>                  
       初心者向け
       <span class="Counter">{{ $entrance_section_count }}</span>
     </a>
     <a class="UnderlineNav-item {{ if in .Keywords "flutter" }} selected {{ end }}" href="{{ .Site.BaseURL }}/post/flutter">
-      <svg class="octicon octicon-repo UnderlineNav-octicon hide-sm" height="16" viewBox="0 0 16 16"
-        version="1.1" width="16">
-        <path fill-rule="evenodd"
-          d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
-        </path>
-      </svg>
+      <svg width="16" height="16" class="octicon octicon-repo UnderlineNav-octicon hide-sm" id="logo_vector" data-name="logo vector" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 371.43"><defs><style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{isolation:isolate;opacity:0.2;}.cls-4{fill:#54c5f8;}.cls-5{fill:#01579b;}.cls-6{fill:url(#linear-gradient);}.cls-7{fill:#29b6f6;}.cls-8{fill:url(#radial-gradient);}</style><clipPath id="clip-path"><path class="cls-1" d="M300,171.43l-100,100,100,100H185.72l-42.86-42.86h0L85.71,271.42l100-100ZM185.72,0,0,185.72l57.15,57.15L300,0Z"/></clipPath><linearGradient id="linear-gradient" x1="6254.1" y1="5576.56" x2="6424.34" y2="5406.31" gradientTransform="translate(-1404 -1054.53) scale(0.25)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1a237e" stop-opacity="0.4"/><stop offset="1" stop-color="#1a237e" stop-opacity="0"/></linearGradient><radialGradient id="radial-gradient" cx="5649.77" cy="4319.41" r="1817.72" gradientTransform="translate(-1404 -1054.53) scale(0.25)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff" stop-opacity="0.1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs><g class="cls-2"><image class="cls-3" width="125" height="97" transform="translate(67.54 154.53) scale(2.14)" xlink:href="data:image/png;base64,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"/><polygon class="cls-4" points="300 171.43 300 171.43 300 171.43 185.72 171.43 85.73 271.44 142.85 328.57 300 171.43"/></g><g class="cls-2"><polygon class="cls-4" points="57.15 242.87 0 185.72 185.72 0 300 0 57.15 242.87"/></g><g class="cls-2"><polygon class="cls-5" points="142.85 328.57 185.72 371.44 300 371.44 300 371.44 200.01 271.44 142.85 328.57"/></g><g class="cls-2"><polygon class="cls-6" points="142.85 328.57 227.61 299.24 200.01 271.44 142.85 328.57"/></g><g class="cls-2"><rect class="cls-7" x="102.45" y="231.03" width="80.81" height="80.81" transform="translate(-150.09 180.52) rotate(-45)"/></g><path class="cls-8" d="M300,171.43l-100,100,100,100H185.72l-42.86-42.86h0L85.71,271.42l100-100ZM185.72,0,0,185.72l57.15,57.15L300,0Z"/></svg>
       Flutter
       <span class="Counter">{{ $flutter_section_count }}</span>
     </a>
     <a class="UnderlineNav-item {{ if in .Keywords "kotlin" }} selected {{ end }}" href="{{ .Site.BaseURL }}/post/kotlin">
-      <svg class="octicon octicon-repo UnderlineNav-octicon hide-sm" height="16" viewBox="0 0 16 16"
-        version="1.1" width="16">
-        <path fill-rule="evenodd"
-          d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
-        </path>
+      <svg class="octicon octicon-repo UnderlineNav-octicon hide-sm" height="16" width="16" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 16 16" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+        <style type="text/css">
+          .st1{fill:url(#SVGID_1_);}
+        </style>
+        <g id="Logotypes">
+          <g>
+            <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="500.0035" y1="579.1058" x2="-9.653803e-02" y2="1079.2058" gradientTransform="matrix(0.9998 0 0 0.9998 9.651873e-02 -578.99)">
+            <stop  offset="3.435144e-03" style="stop-color:#E44857"/>
+            <stop  offset="0.4689" style="stop-color:#C711E1"/>
+            <stop  offset="1" style="stop-color:#7F52FF"/>
+            </linearGradient>
+            <polygon class="st1" points="500,500 0,500 0,0 500,0 250,250 		"/>
+          </g>
+        </g>
       </svg>
       Kotlin
       <span class="Counter">{{ $kotlin_section_count }}</span>
     </a>
     <a class="UnderlineNav-item {{ if in .Keywords "gadget" }} selected {{ end }}" href="{{ .Site.BaseURL }}/post/gadget">
-      <svg class="octicon octicon-repo UnderlineNav-octicon hide-sm" height="16" viewBox="0 0 16 16"
-        version="1.1" width="16">
-        <path fill-rule="evenodd"
-          d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
-        </path>
+      <svg class="octicon octicon-repo UnderlineNav-octicon hide-sm" height="16" width="16" version="1.1" id="_x31_0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="width: 16px; height: 16px; opacity: 1;" xml:space="preserve">
+        <style type="text/css">
+          .st2{fill:#374149;}
+        </style>
+        <g>
+          <path class="st2" d="M376.966,149.311l3.574-2.707c6.106-4.617,18.446-10.258,32.559,3.859c0.934,0.934,1.942,1.614,2.902,2.462
+            c0.625,0.55,1.25,1.082,1.882,1.594c1.813,1.461,3.645,2.774,5.527,3.934c0.852,0.527,1.703,1.023,2.566,1.488
+            c1.77,0.95,3.543,1.762,5.352,2.45c0.942,0.359,1.882,0.691,2.836,0.976c1.91,0.582,3.816,1,5.746,1.294
+            c0.817,0.125,1.633,0.242,2.454,0.312c12.019,1.078,24.078-3.191,34.125-13.234c3.75-3.754,3.68-9.922-0.152-13.758
+            c-3.832-3.832-10.004-3.894-13.754-0.149c-4.09,4.094-18.774,16.118-35.871-0.98c-1.102-1.102-2.277-1.958-3.418-2.934
+            c-0.242-0.207-0.481-0.418-0.719-0.618c-2.14-1.781-4.332-3.343-6.582-4.699c-0.414-0.25-0.82-0.515-1.238-0.754
+            c-2.457-1.383-4.946-2.52-7.481-3.398c-0.156-0.055-0.304-0.129-0.461-0.18c-1.351-0.453-2.706-0.82-4.07-1.133
+            c-0.301-0.066-0.609-0.106-0.91-0.168c-2.5-0.508-5-0.777-7.512-0.805c-0.133,0-0.266-0.019-0.398-0.019
+            c-0.121,0-0.238,0.031-0.363,0.031c-2.18,0.019-4.348,0.203-6.508,0.594c-0.07,0.012-0.133,0.031-0.203,0.043
+            c-6.742,1.25-13.328,4.129-19.34,9.015l-3.894,3.168l-0.422,0.321l0.015,0.011l-0.125,0.102L376.966,149.311z" style="fill: rgb(75, 75, 75);"></path>
+          
+            <rect x="168.54" y="85.226" transform="matrix(-0.7072 -0.7071 0.7071 -0.7072 247.8955 311.196)" class="st2" width="39.705" height="38.073" style="fill: rgb(75, 75, 75);"></rect>
+          <polygon class="st2" points="204.763,147.554 232.837,175.631 259.759,148.71 231.857,120.807 231.798,120.745 231.798,120.745 
+            231.685,120.631 	" style="fill: rgb(75, 75, 75);"></polygon>
+          
+            <rect x="256.278" y="172.964" transform="matrix(-0.7072 -0.7071 0.7071 -0.7072 335.6428 523.0153)" class="st2" width="39.705" height="38.073" style="fill: rgb(75, 75, 75);"></rect>
+          
+            <rect x="300.147" y="216.833" transform="matrix(-0.7071 -0.7072 0.7072 -0.7071 379.4603 628.9333)" class="st2" width="39.705" height="38.073" style="fill: rgb(75, 75, 75);"></rect>
+          <polygon class="st2" points="336.369,279.163 364.446,307.237 391.369,280.315 363.466,252.413 363.404,252.354 363.404,252.354 
+            363.29,252.241 	" style="fill: rgb(75, 75, 75);"></polygon>
+          <polygon class="st2" points="380.353,322.917 380.353,322.921 380.24,323.034 408.314,351.108 435.24,324.186 407.162,296.108 
+            380.411,322.862 	" style="fill: rgb(75, 75, 75);"></polygon>
+          <polygon class="st2" points="146.903,173.827 173.826,146.905 145.747,118.826 118.997,145.581 118.938,145.635 118.938,145.635 
+            118.826,145.749 	" style="fill: rgb(75, 75, 75);"></polygon>
+          <polygon class="st2" points="189.618,162.698 162.868,189.448 162.81,189.506 162.81,189.506 162.697,189.62 190.774,217.698 
+            217.697,190.776 	" style="fill: rgb(75, 75, 75);"></polygon>
+          <polygon class="st2" points="233.602,206.678 233.602,206.678 233.49,206.565 206.735,233.319 206.677,233.378 206.677,233.378 
+            206.567,233.487 234.642,261.565 261.564,234.643 233.602,206.678 	" style="fill: rgb(75, 75, 75);"></polygon>
+          <polygon class="st2" points="277.357,250.436 250.606,277.186 250.548,277.245 250.548,277.245 250.434,277.358 278.513,305.436 
+            305.435,278.51 	" style="fill: rgb(75, 75, 75);"></polygon>
+          <polygon class="st2" points="322.38,349.303 349.302,322.382 321.228,294.307 294.474,321.058 294.419,321.116 294.419,321.116 
+            294.306,321.23 	" style="fill: rgb(75, 75, 75);"></polygon>
+          
+            <rect x="346.636" y="345.82" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -151.4676 365.6736)" class="st2" width="38.074" height="39.708" style="fill: rgb(75, 75, 75);"></rect>
+          
+            <rect x="85.224" y="168.541" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -102.6762 128.8997)" class="st2" width="38.073" height="39.706" style="fill: rgb(75, 75, 75);"></rect>
+          <polygon class="st2" points="260.712,317.925 235.294,292.502 219.498,276.706 191.423,248.631 147.552,204.761 120.63,231.682 
+            164.501,275.554 192.575,303.632 208.372,319.425 233.79,344.846 236.446,347.499 263.369,320.577 	" style="fill: rgb(75, 75, 75);"></polygon>
+          <polygon class="st2" points="307.126,364.562 307.126,364.562 307.239,364.448 279.162,336.37 252.239,363.292 280.318,391.37 
+            307.068,364.62 	" style="fill: rgb(75, 75, 75);"></polygon>
+          
+            <rect x="303.753" y="388.702" transform="matrix(-0.7072 -0.7071 0.7071 -0.7072 264.1525 924.8828)" class="st2" width="39.706" height="38.073" style="fill: rgb(75, 75, 75);"></rect>
+          <path class="st2" d="M503.388,300.151L211.849,8.612c-11.481-11.481-30.164-11.485-41.645,0L8.61,170.206
+            c-11.481,11.481-11.481,30.164,0,41.649L300.146,503.39c11.485,11.481,30.168,11.481,41.649,0l161.594-161.594
+            C514.873,330.315,514.869,311.635,503.388,300.151z M191.857,28.604l291.539,291.539c0.461,0.458,0.461,1.203,0,1.664
+            l-161.59,161.59c-0.461,0.461-1.206,0.461-1.668,0.004L28.598,191.862c-0.457-0.461-0.457-1.206,0.004-1.667l161.594-161.59
+            C190.654,28.147,191.399,28.143,191.857,28.604z" style="fill: rgb(75, 75, 75);"></path>
+        </g>
       </svg>
       ガジェット記事
       <span class="Counter">{{ $gadget_section_count }}</span>
